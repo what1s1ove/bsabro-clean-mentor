@@ -139,11 +139,42 @@
     </section>
 
     <section class="slide slide--bsa" id="author">
-      <img class="author__img cover next" src="./pictures/base-mentor.png" alt="Course"/>
+      <img class="author__img cover next" src="./pictures/base-mentor.png" alt="Course" />
 
       <style>
         #author .author__img {
           transform: translate(-50%, -50%) scale(0.8);
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="stats">
+      <h2 class="stats__title">Stats 📊</h2>
+      <ul class="stats__list next">
+        <li class="stats__item">👪 10+</li>
+        <li class="stats__item next">💼 100+</li>
+        <li class="stats__item next">🧑‍🎓 200+</li>
+      </ul>
+
+      <style>
+        #stats .stats__title {
+          margin-bottom: 70px;
+        }
+
+        #stats .stats__list {
+          display: grid;
+          gap: 10px 0;
+          justify-content: center;
+          margin: 0;
+        }
+
+        #stats .stats__item {
+          font-size: 40px;
+          font-weight: 700;
+        }
+
+        #stats .stats__item::before {
+          display: none;
         }
       </style>
     </section>
