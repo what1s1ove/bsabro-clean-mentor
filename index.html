@@ -25,12 +25,57 @@
           font-size: 13px;
         }
 
+        .visually-hidden {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          margin: -1px;
+          padding: 0;
+          overflow: hidden;
+          white-space: nowrap;
+          border: 0;
+          clip: rect(0 0 0 0);
+          clip-path: inset(100%);
+        }
+
         .review {
           position: absolute;
         }
 
         .review-1 {
+          top: 25%;
+          left: 3%;
+          transform: rotate(-15deg);
+        }
 
+        .review-2 {
+          top: 25%;
+          right: 2%;
+          transform: rotate(10deg);
+        }
+
+        .review-3 {
+          top: 45%;
+          left: 3%;
+          transform: rotate(-5deg);
+        }
+
+        .review-4 {
+          top: 45%;
+          right: 2%;
+          transform: rotate(5deg);
+        }
+
+        .review-5 {
+          top: 72%;
+          left: 3%;
+          transform: rotate(-5deg);
+        }
+
+        .review-6 {
+          top: 70%;
+          right: 2%;
+          transform: rotate(-5deg);
         }
       </style>
   </head>
@@ -248,8 +293,8 @@
     </section>
 
     <section class="slide slide--bsa" id="whatislovemath">
-      <h2 class="whatislovemath__title">🔮</h2>
-      <p class="whatislovemath__desc">
+      <h2 class="whatislovemath__title next">🔮</h2>
+      <p class="whatislovemath__desc next">
         <code>WhatisloveMath</code>
       </p>
 
@@ -265,6 +310,59 @@
           font-size: 50px;
         }
       </style>
+    </section>
+
+    <section class="slide slide--bsa" id="memory">
+      <h2 class="memory__title">Sometimes...</h2>
+      <ul class="memory__list next">
+        <li class="memory__item">😔</li>
+        <li class="memory__item next">😢</li>
+        <li class="memory__item next">😭</li>
+      </ul>
+      <img class="review review-3 next" width="400" src="pictures/review-6.png" alt="Review">
+      <img class="review review-6 next" width="450" src="pictures/review-9.png" alt="Review">
+      <img class="review review-2 next" width="450" src="pictures/review-3.png" alt="Review">
+      <img class="review review-5 next" width="450" src="pictures/review-8.png" alt="Review">
+      <img class="review review-4 next" width="450" src="pictures/review-7.png" alt="Review">
+      <img class="review review-1 next" width="500" src="pictures/review-2.png" alt="Review">
+
+      <style>
+        #memory .memory__title {
+          margin-bottom: 30px;
+        }
+
+        #memory .memory__list {
+          display: grid;
+          align-items: center;
+          gap: 70px 0;
+          margin: 0;
+        }
+
+        #memory .memory__item {
+          text-align: center;
+          font-size: 70px;
+          line-height: 1;
+        }
+
+        #memory .memory__item::before {
+          display: none;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="memory">
+      <h2 class="memory__title"><s>Sometimes...</s></h2>
+      <ul class="memory__list">
+        <li class="memory__item">🥲</li>
+        <li class="memory__item">😌</li>
+        <li class="memory__item">🥰</li>
+      </ul>
+      <img class="review review-3" width="400" src="pictures/review-6.png" alt="Review">
+      <img class="review review-6" width="450" src="pictures/review-9.png" alt="Review">
+      <img class="review review-2" width="450" src="pictures/review-3.png" alt="Review">
+      <img class="review review-5" width="450" src="pictures/review-8.png" alt="Review">
+      <img class="review review-4" width="450" src="pictures/review-7.png" alt="Review">
+      <img class="review review-1" width="500" src="pictures/review-2.png" alt="Review">
     </section>
 
     <section class="slide slide--bsa" id="goal">
