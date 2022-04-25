@@ -10,6 +10,10 @@
           --slide-ratio: calc(16 / 9);
         }
 
+        .slide .center-title {
+          margin-top: 190px;
+        }
+
         .slide--bsa {
           background-image: url(./pictures/binary-studio-logo.svg), url(./pictures/binary-studio-academy-logo.svg);
           background-repeat: no-repeat;
@@ -36,6 +40,47 @@
           border: 0;
           clip: rect(0 0 0 0);
           clip-path: inset(100%);
+        }
+
+        .chat {
+          max-width: 400px;
+          width: 100%;
+          margin-inline: auto;
+        }
+
+        .chat__logo {
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px dashed #000000;
+        }
+
+        .chat__time {
+          display: block;
+          text-align: center;
+          font-size: 16px;
+          opacity: 0.5;
+        }
+
+        .chat__list {
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+        }
+
+        .chat__item {
+          font-size: 15px;
+        }
+
+        .chat__item::before {
+          display: none;
+        }
+
+        .chat__item--own {
+          align-self: end;
+        }
+
+        .chat__comment {
+          opacity: 0.5;
         }
 
         .review {
@@ -233,13 +278,7 @@
     </section>
 
     <section class="slide slide--bsa" id="why">
-      <h2 class="why__title">Why should I become a mentor❓</h2>
-
-      <style>
-        #why .why__title {
-          margin-top: 190px;
-        }
-      </style>
+      <h2 class="center-title">Why should I become a mentor❓</h2>
     </section>
 
     <section class="slide slide--bsa" id="first-reason-fake">
@@ -319,11 +358,11 @@
         <li class="memory__item next">😢</li>
         <li class="memory__item next">😭</li>
       </ul>
-      <img class="review review-3 next" width="400" src="pictures/review-6.png" alt="Review">
+      <img class="review review-3 next" width="400" src="pictures/review-17.png" alt="Review">
       <img class="review review-6 next" width="450" src="pictures/review-9.png" alt="Review">
       <img class="review review-2 next" width="450" src="pictures/review-3.png" alt="Review">
       <img class="review review-5 next" width="450" src="pictures/review-8.png" alt="Review">
-      <img class="review review-4 next" width="450" src="pictures/review-7.png" alt="Review">
+      <img class="review review-4 next" width="450" src="pictures/review-15.png" alt="Review">
       <img class="review review-1 next" width="500" src="pictures/review-2.png" alt="Review">
 
       <style>
@@ -357,11 +396,11 @@
         <li class="memory__item">😌</li>
         <li class="memory__item">🥰</li>
       </ul>
-      <img class="review review-3" width="400" src="pictures/review-6.png" alt="Review">
+      <img class="review review-3" width="400" src="pictures/review-17.png" alt="Review">
       <img class="review review-6" width="450" src="pictures/review-9.png" alt="Review">
       <img class="review review-2" width="450" src="pictures/review-3.png" alt="Review">
       <img class="review review-5" width="450" src="pictures/review-8.png" alt="Review">
-      <img class="review review-4" width="450" src="pictures/review-7.png" alt="Review">
+      <img class="review review-4" width="450" src="pictures/review-15.png" alt="Review">
       <img class="review review-1" width="500" src="pictures/review-2.png" alt="Review">
     </section>
 
@@ -400,8 +439,12 @@
       </style>
     </section>
 
+    <section class="slide slide--bsa" id="goal-title">
+      <h2 class="center-title">Goal of the Mentor <span class="next">🥁</span></h2>
+    </section>
+
     <section class="slide slide--bsa" id="goal">
-      <h2 class="goal__title">Goal of the Mentor <span class="next">– <u>evoke feelings</u></span></h2>
+      <h2 class="goal__title">✨ Evoke Feelings</h2>
       <div class="goal__wrapper next">
         <p>💑😍❤️‍🔥😘❤️😊🥰😻</p>
         <p class="next">😾🤬😡👺👿🍄😠☠️</p>
@@ -409,7 +452,9 @@
 
       <style>
         #goal .goal__title {
-          margin-bottom: 70px;
+          text-align: center;
+          margin-bottom: 50px;
+          font-size: 80px;
         }
 
         #goal .goal__wrapper {
@@ -418,6 +463,127 @@
           font-size: 50px;
         }
       </style>
+    </section>
+
+    <section class="slide slide--bsa" id="demo">
+      <h2 class="center-title">🔴 Live Demo</h2>
+    </section>
+
+    <section class="slide slide--bsa" id="answers">
+      <h2 class="visually-hidden">Chat demo</h2>
+      <div class="chat next">
+        <p class="chat__logo">
+          <span>🥋 GetMentor</span>
+          🔄
+        </p>
+        <b class="chat__time next">
+          02.03.2022 🗓
+        </b>
+        <ul class="chat__list next">
+          <li class="chat__item">
+            (🎓) – Hey!!
+          </li>
+          <li class="chat__item next">
+            (🎓) – I can't solve this problem. I NEED <u><b>YOUR</b></u> HELP! <span class="chat__comment">/* PROBLEM */</span>
+          </li>
+          <li class="chat__item chat__item--own next">
+            (🥋) – <span class="chat__comment">/* ❓ */</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="slide slide--bsa" id="never">
+      <h2 class="never__never">– 2 * 2❓ – and multiply by 8❓</h2>
+      <div class="chat next">
+        <p class="chat__logo">
+          <span>🥋 GetMentor</span>
+          🔄
+        </p>
+        <b class="chat__time">
+          02.03.2022 🗓
+        </b>
+        <ul class="chat__list">
+          <li class="chat__item">
+            (🎓) – Hey!!
+          </li>
+          <li class="chat__item">
+            (🎓) – I can't solve this problem. I NEED <u><b>YOUR</b></u> HELP! <span class="chat__comment">/* PROBLEM */</span>
+          </li>
+          <li class="chat__item chat__item--own">
+            (🥋) – <span class="next">Did you check ...?</span>
+          </li>
+          <li class="chat__item chat__item--own next">
+            (🥋) –And then?
+          </li>
+          <li class="chat__item chat__item--own next">
+            (🥋) – I don't know 🤷‍♂️
+          </li>
+        </ul>
+      </div>
+      <img class="review review-5 next" width="450" src="pictures/review-12.png" alt="Review">
+      <img class="review review-3 next" width="400" src="pictures/review-6.png" alt="Review">
+      <img class="review review-6 next" width="450" src="pictures/review-24.png" alt="Review">
+      <img class="review review-4 next" width="450" src="pictures/review-7.png" alt="Review">
+    </section>
+
+    <section class="slide slide--bsa" id="minutes">
+      <h2 class="minutes__title">15 minutes <span class="next">(with х2 multiplier)</span></h2>
+      <img class="minutes__img next" src="pictures/15-min.png" width="300" alt="15 min rule">
+      <a class="bottom-link" href="https://twitter.com/ABatickaya/status/1447627348908597252" target="_blank" rel="noreferrer">@ABatickaya</a>
+
+      <style>
+        #minutes .minutes__img {
+          display: block;
+          margin-inline: auto;
+        }
+      </style>
+    </section>
+
+    <section class="slide slide--bsa" id="minutes-chat">
+      <h2 class="visually-hidden">Chat demo</h2>
+      <div class="chat">
+        <p class="chat__logo">
+          <span>🥋 GetMentor</span>
+          🔄
+        </p>
+        <b class="chat__time">
+          02.03.2022 🗓
+        </b>
+        <ul class="chat__list next">
+          <li class="chat__item">
+            <b>12:00.</b> (🎓) – I can't solve this problem. I NEED <u><b>YOUR</b></u> HELP! <span class="chat__comment">/* PROBLEM */</span>
+          </li>
+          <li class="chat__item chat__item--own next">
+            <b>12:15.</b> (🥋) – Did you check ...? what result?
+          </li>
+          <li class="chat__item next">
+            <b>12:15.</b> (🎓) – Yes, an empty string. Still don't understand...
+          </li>
+          <li class="chat__item chat__item--own next">
+            <b>12:45.</b> (🥋) – Did you check ...? what result?
+          </li>
+          <li class="chat__item next">
+            <b>12:45.</b> (🎓) – ...
+          </li>
+          <li class="chat__item chat__item--own next">
+            <b>1:45.</b> (🥋) – ...
+          </li>
+        </ul>
+      </div>
+      <img class="review review-4 next" width="400" src="pictures/review-34.png" alt="Review">
+      <img class="review review-3 next" width="450" src="pictures/review-32.png" alt="Review">
+      <img class="review review-6 next" width="450" src="pictures/review-14.png" alt="Review">
+    </section>
+
+    <section class="slide slide--bsa" id="plan">
+      <h2 class="plan__title">Answer Checkup ✍️</h2>
+      <ol class="plan__title">
+        <li class="plan__item">Explain the task/problem in their own words</li>
+        <li class="plan__item">Show & tell what they did</li>
+        <li class="plan__item">What they wanted in the end vs. what they got</li>
+        <li class="plan__item">What have they read about this topic?</li>
+      </ol>
     </section>
 
     <section class="slide slide--bsa" id="thanks">
